@@ -109,6 +109,7 @@
             <groupId>org.zongf</groupId>
             <artifactId>auto-generator-quick-project</artifactId>
             <version>${code.generator.version}</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

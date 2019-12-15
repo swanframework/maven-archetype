@@ -5,7 +5,7 @@
     <groupId>org.zongf</groupId>
     <artifactId>archetype-quick-project</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>maven-archetype</packaging>
+    <packaging>jar</packaging>
     <description>快速搭建一个SSM 项目</description>
 
     <build>
@@ -20,14 +20,5 @@
                 </configuration>
             </plugin>
         </plugins>
-
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.archetype</groupId>
-                <artifactId>archetype-packaging</artifactId>
-                <version>3.1.1</version>
-            </extension>
-        </extensions>
     </build>
-    
 </project>
