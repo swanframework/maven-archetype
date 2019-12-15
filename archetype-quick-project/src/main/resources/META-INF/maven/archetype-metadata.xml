@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="sample">
+
+    <requiredProperties>
+        <requireProperty key="port" />
+        <!-- 必传属性,设置默认值 -->
+        <requireProperty key="groupId">
+            <deafultValue>org.zongf</deafultValue>
+        </requireProperty>
+    </requiredProperties>
+
+    <fileSets>
+
+        <!-- filtered 为true表示替换类中引用变量${}, packaged为true表示将类放到package指定的包中 -->
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+
+        <fileSet filtered="true" packaged="true">
+            <directory>src/test/java</directory>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+
+        <!-- 系统资源文件,packaged指定false即可. -->
+        <fileSet filtered="true" packaged="false">
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*.yml</include>
+                <include>**/*.xml</include>
+                <include>**/*.properties</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+
+</archetype-descriptor>
