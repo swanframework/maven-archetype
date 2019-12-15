@@ -1,0 +1,15 @@
+server:
+  port: 8180
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/codes-generator?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  config-location: classpath:config/mybatis-config.xml
+  mapper-locations: classpath:mappers/*Mapper.xml
+logging:
+  level:
+    root: warn
+    org.zongf.test.helper.mybatis.mapper: debug
